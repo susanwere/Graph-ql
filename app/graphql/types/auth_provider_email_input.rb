@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Types
   # Create a type for the authentication provider
   class AuthProviderEmailInput < BaseInputObject
