@@ -69,3 +69,5 @@ gem 'graphiql-rails', '1.5.0', group: :development
 gem 'pry'
 
 gem 'rspec-rails', '~> 3.8', '>= 3.8.2'
+
+gem 'bcrypt'
