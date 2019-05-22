@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Mutations
   # mutation to create a link
   class CreateLink < BaseMutation

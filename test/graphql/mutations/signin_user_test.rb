@@ -1,7 +1,8 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 # Test for link mutations
 class Mutations::SignInUserTest < ActiveSupport::TestCase
-
   def perform(args = {})
     Mutations::SignInUser.new(object: nil, context: { session: {} }).resolve(args)
   end
@@ -26,7 +27,7 @@ class Mutations::SignInUserTest < ActiveSupport::TestCase
   def unsuccessfuly_login_user
     @failure_response = perform(
       email: {
-        email: 'wrong email', 
+        email: 'wrong email',
         password: 'wrong password'
       }
     )

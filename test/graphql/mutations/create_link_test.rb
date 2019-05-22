@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 # Test for link mutations
 class Mutations::CreateLinkTest < ActiveSupport::TestCase
@@ -7,9 +9,9 @@ class Mutations::CreateLinkTest < ActiveSupport::TestCase
 
   test 'create a new link' do
     link = perform(
-        url: 'http://google.com',
-        description: 'Google Platform',
-      )
+      url: 'http://google.com',
+      description: 'Google Platform'
+    )
 
     assert link.persisted?
     assert_equal link.url, 'http://google.com'

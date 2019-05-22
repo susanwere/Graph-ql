@@ -1,7 +1,8 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 # Test for link mutations
 class Mutations::CreateUserTest < ActiveSupport::TestCase
-
   def perform(args = {})
     Mutations::CreateUser.new(object: nil, context: {}).resolve(args)
   end
@@ -14,7 +15,7 @@ class Mutations::CreateUserTest < ActiveSupport::TestCase
           email: 'test@user.com',
           password: '12345'
         }
-      },
+      }
     )
 
     assert user.persisted?
