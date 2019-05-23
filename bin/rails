@@ -1,4 +1,13 @@
 #!/usr/bin/env ruby
+
+if ENV['RAILS_ENV'] == 'test'
+  require 'simplecov'
+  require 'simplecov-console'
+  SimpleCov.formatter = SimpleCov::Formatter::Console
+  SimpleCov.start
+  puts "required simplecov"
+end
+
 # frozen_string_literal: true
 
 begin
