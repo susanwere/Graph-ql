@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'test_helper'
 # Test for link mutations
 class Mutations::CreateVoteTest < ActiveSupport::TestCase
@@ -8,13 +6,13 @@ class Mutations::CreateVoteTest < ActiveSupport::TestCase
   end
 
   def perform(user: @result[:user], **args)
-    Mutations::CreateVote.new(object: nil, context: { session: user, current_user: user }).resolve(args)
+    Mutations::CreateVote.new(object: nil, context: { session: user, current_user: user}).resolve(args)
   end
 
   def create_link
     @link = Link.create!(
       url: 'http://google.com',
-      description: 'Google Platform'
+      description: 'Google Platform',
     )
   end
 
@@ -42,8 +40,8 @@ class Mutations::CreateVoteTest < ActiveSupport::TestCase
     successfuly_login_user
 
     vote = perform(
-      link_id: @link.id
-    )
+        link_id: @link.id
+      )
 
     assert vote.persisted?
   end

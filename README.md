@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/susanwere/Graph-ql.svg?branch=develop)](https://travis-ci.org/susanwere/Graph-ql)  [![Maintainability](https://api.codeclimate.com/v1/badges/8708143e263b045f53dc/maintainability)](https://codeclimate.com/github/susanwere/Graph-ql/maintainability)  [![Test Coverage](https://api.codeclimate.com/v1/badges/8708143e263b045f53dc/test_coverage)](https://codeclimate.com/github/susanwere/Graph-ql/test_coverage)
+
 # Graph-ql
 
 This application contains code which is a practice of the graphql-ruby tutorial on how to build your very own GraphQL server using Ruby on Rails.
@@ -25,13 +27,12 @@ Install dependencies:
 `rails db:migrate`
   
 Starting the server:
-` 
-  rails server
-  
-`
+
+`rails server`
+
 Running GraphQL IDE:
 
-` open http://localhost:3000/graphiql `
+` \open http://localhost:3000/graphiql `
 
 # Sample GraphQL Queries as per the tutorial
 
