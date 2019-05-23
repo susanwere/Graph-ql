@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 require 'test_helper'
+
+print("finally got here!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
 # Test for link mutations
 class Mutations::CreateLinkTest < ActiveSupport::TestCase
   def perform(user: nil, **args)
